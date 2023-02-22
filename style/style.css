@@ -50,7 +50,9 @@ main {
 }
 
 #portfolio .cards {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
 }
@@ -58,6 +60,7 @@ main {
 #portfolio .card {
     display: flex;
     flex-direction: column;
+    width: 423px;
     gap: 15px;
     padding: 30px;
     background-color: #131831;
