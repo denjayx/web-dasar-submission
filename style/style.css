@@ -60,7 +60,7 @@ main {
 #portfolio .card {
     display: flex;
     flex-direction: column;
-    width: 423px;
+    width: 420px;
     gap: 15px;
     padding: 30px;
     background-color: #131831;
@@ -132,4 +132,28 @@ th {
 .headline {
     color: #FF9900;
     font-size: 32px;
+}
+@media screen and (max-width: 680px) {
+
+    body {
+        width: 100%;
+        text-align: center;
+    }
+
+    header,
+    main {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    #contact {
+        display: flex;
+        align-items: center;
+    }
 }
