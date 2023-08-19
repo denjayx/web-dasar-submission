@@ -1,105 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="style/style.css" />
+		<title>Deni Wijaya | Final Submission Web Dasar</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
-    <title>Deni Wijaya | Final Submission Web Dasar</title>
-</head>
-
-<body>
-    <header>
-        <div class="logo">
-            <img src="assets/images/logodenjay.svg" alt="logo brand denjay">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div id="content">
-            <article id="about">
-                <h2 class="headline">Hello Everyone</h2>
-                <p class="paragraph">Welcome to my portfolio website. My name is Deni Wijaya, student at Amikom
-                    University
-                    Yogyakarta - Bachelor of Informatics. I'm currently focusing on studying FrontEnd Development. I
-                    attach
-                    some projects that I have worked in this website. Hope we can work together, enjoy exploring</p>
-            </article>
-            <article id="portfolio">
-                <h2 class="headline">My UI/UX Portfolio</h2>
-                <div class="cards">
-                    <div class="card">
-                        <img src="assets/images/agsshop.png" alt="ags shop thumbnail">
-                        <h4 class="product-title">AGS Shop - Platform Terbaik Dalam Bidang Fashion</h4>
-                    </div>
-                    <div class="card">
-                        <img src="assets/images/smrn.png" alt="ags shop thumbnail">
-                        <h4 class="product-title">Srmn. - Katalog produk-produk pakaian berkualitas terbaik</h4>
-                    </div>
-                    <div class="card">
-                        <img src="assets/images/smrn.png" alt="ags shop thumbnail">
-                        <h4 class="product-title">Srmn. - Katalog produk-produk pakaian berkualitas terbaik</h4>
-                    </div>
-                    <div class="card">
-                        <img src="assets/images/smrn.png" alt="ags shop thumbnail">
-                        <h4 class="product-title">Srmn. - Katalog produk-produk pakaian berkualitas terbaik</h4>
-                    </div>
-                </div>
-            </article>
-            <article id="contact">
-                <h2 class="headline">Follow Me On</h2>
-                <div class="icon">
-                    <img src="assets/images/ig.svg" alt="instagram icon">
-                    <img src="assets/images/yt.svg" alt="youtube icon">
-                    <img src="assets/images/fb.svg" alt="facebook icon">
-                </div>
-            </article>
-        </div>
-        <aside>
-            <article class="biodata">
-                <header>
-                    <figure>
-                        <img src="assets/images/profilephoto.png" alt="profile photo">
-                    </figure>
-                    <h2 class="headline">Biodata</h2>
-                </header>
-                <section>
-                    <table>
-                        <tr>
-                            <th>Nama</th>
-                            <td>Deni Wijaya</td>
-                        </tr>
-                        <tr>
-                            <th>Lahir</th>
-                            <td>Way Kanan Lampung, 6 Juni 2003</td>
-                        </tr>
-                        <tr>
-                            <th>Study</th>
-                            <td>Universitas Amikom Yogyakarta</td>
-                        </tr>
-                        <tr>
-                            <th>Skill</th>
-                            <td>Front End Web</td>
-                        </tr>
-                    </table>
-                </section>
-            </article>
-        </aside>
-    </main>
-    <footer>
-        <p class="paragraph">Final Submission - Belajar Dasar Pemrograman Web</p>
-        <p class="paragraph text-bold">Deni Wijaya</p>
-    </footer>
-</body>
-
+	<body>
+		<header>
+			<div id="logo" class="">
+				<div>
+					<img src="assets/images/logodenjay.svg" alt="logo brand denjay" />
+				</div>
+				<div id="hamburger">
+					<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17h14M5 12h14M5 7h14" /></svg>
+				</div>
+			</div>
+			<nav>
+				<ul id="desktop-nav">
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+				<ul id="mobile-nav" class="">
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div id="content">
+				<article id="about">
+					<h2 class="headline">Hello Everyone</h2>
+					<p class="paragraph">Welcome to my portfolio website. My name is Deni Wijaya, student at Amikom University Yogyakarta - Bachelor of Informatics. I'm currently focusing on studying FrontEnd Development. I attach some projects that I have worked in this website. Hope we can work together, enjoy exploring</p>
+				</article>
+				<article id="portfolio">
+					<h2 class="headline">My UI/UX Portfolio</h2>
+					<div class="cards">
+						<div class="card">
+							<img src="assets/images/agsshop.png" alt="ags shop thumbnail" />
+							<h4 class="product-title">AGS Shop - Platform Terbaik Dalam Bidang Fashion</h4>
+						</div>
+						<div class="card">
+							<img src="assets/images/smrn.png" alt="ags shop thumbnail" />
+							<h4 class="product-title">Srmn. - Katalog produk-produk pakaian berkualitas terbaik</h4>
+						</div>
+						<div class="card">
+							<img src="assets/images/smrn.png" alt="ags shop thumbnail" />
+							<h4 class="product-title">Srmn. - Katalog produk-produk pakaian berkualitas terbaik</h4>
+						</div>
+						<div class="card">
+							<img src="assets/images/smrn.png" alt="ags shop thumbnail" />
+							<h4 class="product-title">Srmn. - Katalog produk-produk pakaian berkualitas terbaik</h4>
+						</div>
+					</div>
+				</article>
+				<article id="contact">
+					<h2 class="headline">Follow Me On</h2>
+					<div class="icon">
+						<img src="assets/images/ig.svg" alt="instagram icon" />
+						<img src="assets/images/yt.svg" alt="youtube icon" />
+						<img src="assets/images/fb.svg" alt="facebook icon" />
+					</div>
+				</article>
+			</div>
+			<aside>
+				<article class="biodata">
+					<header>
+						<figure>
+							<img src="assets/images/profilephoto.png" alt="profile photo" />
+						</figure>
+						<h2 class="headline">Biodata</h2>
+					</header>
+					<section>
+						<table>
+							<tr>
+								<th>Nama</th>
+								<td>Deni Wijaya</td>
+							</tr>
+							<tr>
+								<th>Lahir</th>
+								<td>Way Kanan Lampung, 6 Juni 2003</td>
+							</tr>
+							<tr>
+								<th>Study</th>
+								<td>Universitas Amikom Yogyakarta</td>
+							</tr>
+							<tr>
+								<th>Skill</th>
+								<td>Front End Web</td>
+							</tr>
+						</table>
+					</section>
+				</article>
+			</aside>
+		</main>
+		<footer>
+			<p class="paragraph">Final Submission - Belajar Dasar Pemrograman Web</p>
+			<p class="paragraph text-bold">Deni Wijaya</p>
+		</footer>
+		<script src="index.js"></script>
+	</body>
 </html>

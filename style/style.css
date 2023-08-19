@@ -11,6 +11,7 @@ body {
     color: #9D99BE;
     width: 1300px;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 header {
@@ -20,15 +21,38 @@ header {
     padding: 30px 0;
 }
 
-nav li {
+nav ul li {
     list-style: none;
-    display: inline-block;
 }
 
 nav ul li a {
     text-decoration: none;
     margin: 0 20px;
     color: #9D99BE;
+}
+
+#logo {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#mobile-nav {
+    display: none;
+}
+
+nav #desktop-nav {
+    display: flex;
+    list-style: none;
+}
+
+#hamburger {
+    display: none;
+}
+
+.container-lg {
+    max-width: 80%;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 main {
@@ -133,11 +157,51 @@ th {
     color: #FF9900;
     font-size: 32px;
 }
+
 @media screen and (max-width: 680px) {
 
     body {
         width: 100%;
         text-align: center;
+    }
+
+    #logo {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    nav #mobile-nav {
+        background: #111b44;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        padding-right: 24px;
+        width: 40vw;
+        height: 100vh;
+        position: absolute;
+        left: 214px;
+        gap: 40px;
+        transition: ease;
+        border-top-left-radius: 12px;
+    }
+
+    nav #mobile-nav.active {
+        left: 46px;
+        transition-duration: .2s;
+    }
+
+    nav #desktop-nav {
+        display: none;
     }
 
     header,
@@ -156,4 +220,5 @@ th {
         display: flex;
         align-items: center;
     }
+
 }
